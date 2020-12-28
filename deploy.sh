@@ -20,11 +20,11 @@ cd docs/.vuepress/dist
 #   githubUrl=https://xugaoyi:${GITHUB_TOKEN}@github.com/xugaoyi/vuepress-theme-vdoing.git
 #   git config --global user.name "xugaoyi"
 #   git config --global user.email "894072666@qq.com"
-fi
+# fi
 git init
 git add -A
 git commit -m "deploy"
-git push -f git@github.com:yuren007/ryBlob.git main:gh-pages # 推送到github
+git push -f https://github.com/yuren007/ryBlob.git main:gh-pages # 推送到github
 
 # deploy to coding
 # echo 'www.xugaoyi.com\nxugaoyi.com' > CNAME  # 自定义域名
