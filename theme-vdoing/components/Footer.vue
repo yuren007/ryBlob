@@ -22,7 +22,7 @@
       title="本站主题"
     >Vdoing</a> -->
     <template v-if="footer">
-      | Copyright © {{ footer.createYear }}-{{ new Date().getFullYear() }}
+      renyu | Copyright © {{ footer.createYear }}-{{ new Date().getFullYear() }}
       <span
         v-html="footer.copyrightInfo"
       ></span>
