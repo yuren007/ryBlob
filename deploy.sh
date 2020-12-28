@@ -11,20 +11,19 @@ cd docs/.vuepress/dist
 
 # deploy to github
 # echo 'b.xugaoyi.com' > CNAME
-# if [ -z "$GITHUB_TOKEN" ]; then
-#   msg='deploy'
-#   githubUrl=git@github.com:yuren007/ryBlob.git
-# else
-#   msg='来自github actions的自动部署'
-#   # https://github.com/yuren007/ryBlob.git
-#   githubUrl=https://xugaoyi:${GITHUB_TOKEN}@github.com/xugaoyi/vuepress-theme-vdoing.git
-#   git config --global user.name "xugaoyi"
-#   git config --global user.email "894072666@qq.com"
-# fi
+if [ -z "$GITHUB_TOKEN" ]; then
+  msg='deploy'
+  githubUrl=git@github.com:yuren007/ryBlob.git
+else
+  msg='来自github actions的自动部署'
+  githubUrl=https://yuren007:${GITHUB_TOKEN}@github.com/yuren007/ryBlob.git
+  git config --global user.name "yuren007"
+  git config --global user.email "ry930071257@outlook.com"
+fi
 git init
 git add -A
-git commit -m "deploy"
-git push -f https://github.com/yuren007/ryBlob.git main:gh-pages # 推送到github
+git commit -m "${msg}"
+git push -f $githubUrl master:gh-pages # 推送到github
 
 # deploy to coding
 # echo 'www.xugaoyi.com\nxugaoyi.com' > CNAME  # 自定义域名
