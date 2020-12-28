@@ -1,0 +1,8 @@
+.DS_Store
+.vscode
+
+.sonarlint/
+dist/
+node_modules/
+**/*.bat
+.idea

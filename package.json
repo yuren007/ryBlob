@@ -1,0 +1,21 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "vue blob",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "keywords": [
+    "vue",
+    "blob"
+  ],
+  "author": "renyu",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/theme-blog": "^2.3.3",
+    "vuepress": "^1.7.1",
+    "vuepress-theme-vdoing": "^1.7.1"
+  }
+}
