@@ -18,5 +18,8 @@
     "@vuepress/theme-blog": "^2.3.3",
     "vuepress": "^1.7.1",
     "vuepress-theme-vdoing": "^1.7.1"
+  },
+  "dependencies": {
+    "vuepress-plugin-comment": "^0.7.3"
   }
 }

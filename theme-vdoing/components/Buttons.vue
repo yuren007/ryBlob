@@ -54,7 +54,7 @@ export default {
       scrollTop: null,
       showCommentBut: false,
       commentTop: null,
-      currentMode: null,
+      currentMode: 'read',
       showModeBox: false,
       modeList: [
         {

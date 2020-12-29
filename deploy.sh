@@ -21,6 +21,8 @@ else
   git config --global user.email "ry930071257@outlook.com"
 fi
 git init
+git config --global user.name "yuren007"
+git config --global user.email "ry930071257@outlook.com"
 git add -A
 git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github
@@ -38,5 +40,5 @@ git push -f $githubUrl master:gh-pages # 推送到github
 # git commit -m "${msg}"
 # git push -f $codingUrl master # 推送到coding
 
-cd - # 退回开始所在目录
-rm -rf docs/.vuepress/dist
+# cd - # 退回开始所在目录
+# rm -rf docs/.vuepress/dist

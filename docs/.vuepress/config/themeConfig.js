@@ -10,7 +10,7 @@ module.exports = {
   searchMaxSuggestions: 10, // 搜索结果显示最大数
   lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
   docsDir: 'docs', // 编辑的文件夹
-  editLinks: true, // 启用编辑
+  editLinks: false, // 启用编辑
   editLinkText: '编辑',
 
   //*** 以下配置是Vdoing主题改动和新增的配置 ***//
@@ -47,34 +47,34 @@ module.exports = {
   author: {
     // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
     name: 'renyu', // 必需
-    // link: 'https://github.com/xugaoyi', // 可选的
+    link: 'https://github.com/yuren007', // 可选的
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
-    avatar: 'https://i.postimg.cc/SszMQN0j/me.jpg',
+    avatar: 'https://i.postimg.cc/W4j22vfZ/Wechat-IMG5.jpg',
     name: 'Ren yu',
-    slogan: '前端，爱折腾',
+    slogan: '前端',
   },
   social: {
     // 社交图标，显示于博主信息栏和页脚栏
-    // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
-    // icons: [
-    //   {
-    //     iconClass: 'icon-youjian',
-    //     title: '发邮件',
-    //     link: 'mailto:894072666@qq.com',
-    //   },
-    //   {
-    //     iconClass: 'icon-github',
-    //     title: 'GitHub',
-    //     link: 'https://github.com/xugaoyi',
-    //   },
-    //   {
-    //     iconClass: 'icon-erji',
-    //     title: '听音乐',
-    //     link: 'https://music.163.com/#/playlist?id=755597173',
-    //   },
-    // ],
+    iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
+    icons: [
+      {
+        iconClass: 'icon-youjian',
+        title: '发邮件',
+        link: 'mailto:930071257@qq.com',
+      },
+      {
+        iconClass: 'icon-github',
+        title: 'GitHub',
+        link: 'https://github.com/yuren007',
+      },
+      {
+        iconClass: 'icon-erji',
+        title: '听音乐',
+        link: 'https://music.163.com/#/playlist?id=755597173',
+      },
+    ],
   },
   footer: {
     // 页脚信息

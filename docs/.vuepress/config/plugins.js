@@ -33,7 +33,7 @@ module.exports = [
         },
         {
           title: '通过百度搜索本站的',
-          frontUrl: 'https://www.baidu.com/s?wd=site%3Axugaoyi.com%20',
+          frontUrl: 'https://www.baidu.com/s?wd=site%3Arenyu.work%20',
         },
       ],
     },
@@ -72,29 +72,28 @@ module.exports = [
       },
     },
   ],
-  [
-    'vuepress-plugin-baidu-tongji', // 百度统计
-    {
-      hm: '503f098e7e5b3a5b5d8c5fc2938af002',
-    },
-  ],
+  // [
+  //   'vuepress-plugin-baidu-tongji', // 百度统计
+  //   {
+  //     hm: '503f098e7e5b3a5b5d8c5fc2938af002',
+  //   },
+  // ],
   [
     'vuepress-plugin-comment', // 评论
     {
       choosen: 'gitalk',
       options: {
-        clientID: 'a6e1355287947096b88b',
-        clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-        repo: 'blog-gitalk-comment', // GitHub 仓库
-        owner: 'xugaoyi', // GitHub仓库所有者
-        admin: ['xugaoyi'], // 对仓库有写权限的人
+        clientID: '32405e1402a418185082',
+        clientSecret: 'c3e85e6dc823576daed934a9ee94d9033f0536db',
+        repo: 'ryBlog', // GitHub 仓库
+        owner: 'yuren007', // GitHub仓库所有者
+        admin: ['yuren007'], // 对仓库有写权限的人
         // distractionFreeMode: true,
         pagerDirection: 'last', // 'first'正序 | 'last'倒序
-        id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-        title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-        labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-        body:
-          '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+        id: "<%- (window.location.origin + (frontmatter.to.path || window.location.pathname)).slice(-50) %>", //  页面的唯一标识,长度不能超过50
+        title: "「评论」<%- document.title %>", // GitHub issue 的标题
+        labels: ["Gitalk", "Comment"], // GitHub issue 的标签
+        body:"<%- document.title %>：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>", // GitHub issue 的内容
       },
     },
   ],
