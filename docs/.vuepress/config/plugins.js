@@ -85,7 +85,7 @@ module.exports = [
       options: {
         clientID: '32405e1402a418185082',
         clientSecret: 'c3e85e6dc823576daed934a9ee94d9033f0536db',
-        repo: 'ryBlog', // GitHub 仓库
+        repo: 'blog-comments', // GitHub 仓库
         owner: 'yuren007', // GitHub仓库所有者
         admin: ['yuren007'], // 对仓库有写权限的人
         // distractionFreeMode: true,
