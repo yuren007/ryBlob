@@ -87,7 +87,7 @@ export default {
     }
   },
   mounted () {
-    this.currentMode = storage.get('mode') || 'auto'
+    this.currentMode = storage.get('mode') || 'read'
 
     this.scrollTop = this.getScrollTop()
     window.addEventListener('scroll', debounce(() => {
